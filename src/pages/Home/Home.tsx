@@ -32,7 +32,8 @@ function Home() {
         <img
           src={PlanImg}
           alt="Plan"
-          className=" absolute top-0 right-5 rounded-lg h-screen"
+          className=" absolute top-0 right-5 rounded-lg h-screen cursor-pointer"
+          onClick={() => navigate("/plans")}
         />
       </div>
     </div>
