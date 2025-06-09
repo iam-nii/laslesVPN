@@ -1,5 +1,13 @@
+import HeaderComponent from "../../components/HeaderComponent";
+
 function Main() {
-  return <div>Main</div>;
+  return (
+    <>
+      <header className="w-full">
+        <HeaderComponent />
+      </header>
+    </>
+  );
 }
 
 export default Main;

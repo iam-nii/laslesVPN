@@ -12,8 +12,27 @@ export default {
         primary: "#42D2FF",
         secondary: "#F74743",
         middle: "#c8e0fd",
+        "button-red": "#F53838",
       },
     },
   },
-  plugins: [heroui()],
+  plugins: [
+    heroui({
+      themes: {
+        light: {
+          // ...
+          colors: {
+            danger: {
+              DEFAULT: "#F53838",
+            },
+          },
+        },
+        dark: {
+          // ...
+          colors: {},
+        },
+        // ... custom themes
+      },
+    }),
+  ],
 };

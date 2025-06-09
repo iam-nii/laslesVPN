@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 function Home() {
   const navigate = useNavigate();
   return (
-    <div
+    <main
       className="bg-gradient-to-br from-primary/10 via-middle/100
      to-secondary/20 h-screen w-screen py-52 flex relative "
     >
@@ -17,7 +17,14 @@ function Home() {
           internet connection and access content from anywhere in the world.
         </p>
         <div>
-          <Button color="primary">Get Started</Button>
+          <Button
+            color="danger"
+            className="w-40 text-white font-bold rounded-md"
+            onPress={() => navigate("/main")}
+            variant="shadow"
+          >
+            Get Started
+          </Button>
         </div>
       </div>
       <div className="flex absolute top-0 right-0">
@@ -33,10 +40,10 @@ function Home() {
           src={PlanImg}
           alt="Plan"
           className=" absolute top-0 right-5 rounded-lg h-screen cursor-pointer"
-          onClick={() => navigate("/plans")}
+          onClick={() => navigate("/main")}
         />
       </div>
-    </div>
+    </main>
   );
 }
 
